@@ -1,0 +1,86 @@
+#app {
+  margin: 2em;
+}
+
+.calculator {
+  background  : rgb(240,240,240);
+  border      : 4px solid lightgrey;
+  width       : 280px;
+}
+
+.calculator div.display {
+  padding:10px;
+  background: green;
+  color: white;
+  text-align: right;
+  display: block;
+  min-height: 6em;
+  vertical-align: middle;
+}
+
+.display .output {
+  font-size: 1.5rem;
+  min-height: 1em;
+  padding: 0.5rem;
+  width: auto;
+  height: 2em;
+  word-wrap: anywhere;
+}
+
+.calculator div.numpad {
+  width:min-content;
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(50px, auto);
+
+  // grid   : repeat(3, [line1 line2 line3] 20px) / auto-flow 20px
+}
+
+
+.calculator .controls {
+  display: grid;
+  grid-template-columns: 200px 100px;
+  padding:10px;
+}
+
+.calculator .operator-ct {
+  width:min-content;
+  display: grid;
+  grid-template-columns: 50px;
+
+}
+
+.calculator div.operations {
+  display: grid;
+  grid-template-columns: 100px;
+  grid-row-gap: 10px;
+}
+
+.calculator div.operations button {
+  width:50px;
+}
+
+
+.calculator div {
+
+  display: block;
+}
+
+button {
+  filter:drop-shadow(2px 2px 4px rgba(0,0,0,0.4))
+}
+
+button.btn-op {
+  background:lightgreen;
+}
+
+button.btn-op-alt {
+  background:lightpink;
+}
+
+button:hover {
+  color:white;
+  background:green;
+}
+
